@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Test</title>
+</head>
+<body>
+  <h1>Hello Ravi!</h1>
+  <p>Website Successfully Working.</p>
+</body>
+</html><!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ravi Online Service Login</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#2196F3,#4CAF50);
+}
+.login-box{
+    width:320px;
+    background:#fff;
+    margin:80px auto;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,.3);
+    text-align:center;
+}
+input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+button{
+    width:100%;
+    padding:10px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="login-box">
+<h2>Ravi Online Service</h2>
+
+<input type="text" id="userid" placeholder="Login ID">
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+<p id="msg"></p>
+</div>
+
+<script>
+function login(){
+
+let id=document.getElementById("userid").value;
+let pass=document.getElementById("password").value;
+
+if(id=="Ravi123" && pass=="12345"){
+document.getElementById("msg").innerHTML="<span style='color:green'>Login Successful</span>";
+}else{
+document.getElementById("msg").innerHTML="<span style='color:red'>Wrong Login ID or Password</span>";
+}
+
+}
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ravi Online Service - Registration</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.container{
+width:95%;
+max-width:420px;
+background:#fff;
+padding:25px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+.logo{
+text-align:center;
+font-size:28px;
+font-weight:bold;
+color:#0b6efd;
+margin-bottom:5px;
+}
+
+.sub{
+text-align:center;
+color:#666;
+margin-bottom:20px;
+}
+
+input{
+width:100%;
+padding:12px;
+margin:8px 0;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:16px;
+}
+
+button{
+width:100%;
+padding:13px;
+background:#0b6efd;
+color:#fff;
+border:none;
+border-radius:8px;
+font-size:18px;
+cursor:pointer;
+margin-top:10px;
+}
+
+button:hover{
+background:#084298;
+}
+
+.login{
+text-align:center;
+margin-top:15px;
+}
+
+.login a{
+text-decoration:none;
+color:#0b6efd;
+font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">Ravi Online Service</div>
+
+<div class="sub">
+Registration Form
+</div>
+
+<form>
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="tel" placeholder="Mobile Number" maxlength="10" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="text" placeholder="Address" required>
+
+<input type="password" placeholder="Create Password" required>
+
+<input type="password" placeholder="Confirm Password" required>
+
+<button type="submit">
+Register Now
+</button>
+
+</form>
+
+<div class="login">
+Already Registered?
+<a href="login.html">Login</a>
+</div>
+
+</div>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ravi Online Service - Login</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.container{
+width:95%;
+max-width:400px;
+background:#fff;
+padding:25px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+.logo{
+text-align:center;
+font-size:28px;
+font-weight:bold;
+color:#0d6efd;
+margin-bottom:5px;
+}
+
+.sub{
+text-align:center;
+color:#666;
+margin-bottom:20px;
+}
+
+input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:16px;
+}
+
+button{
+width:100%;
+padding:13px;
+background:#0d6efd;
+color:white;
+border:none;
+border-radius:8px;
+font-size:18px;
+cursor:pointer;
+}
+
+button:hover{
+background:#0b5ed7;
+}
+
+.links{
+text-align:center;
+margin-top:15px;
+}
+
+.links a{
+text-decoration:none;
+color:#0d6efd;
+font-weight:bold;
+display:block;
+margin-top:8px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">Ravi Online Service</div>
+
+<div class="sub">User Login</div>
+
+<form action="dashboard.html" method="post">
+
+<input type="text" placeholder="Login ID" required>
+
+<input type="password" placeholder="Password" required>
+
+<button type="submit">Login</button>
+
+</form>
+
+<div class="links">
+
+<a href="#">Forgot Password?</a>
+
+<a href="register.html">Create New Account</a>
+
+</div>
+
+</div>
+
+</body>
+</html>CREATE DATABASE ravi_online_service;
+
+USE ravi_online_service;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    full_name VARCHAR(100),
+    mobile VARCHAR(15) UNIQUE,
+    email VARCHAR(100) UNIQUE,
+    address TEXT,
+    login_id VARCHAR(30) UNIQUE,
+    password VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);<?php
+$conn = new mysqli("localhost","root","","ravi_online_service");
+
+if($conn->connect_error){
+    die("Database Connection Failed");
+}
+?><?php
+include "db.php";
+
+$name = $_POST['name'];
+$mobile = $_POST['mobile'];
+$email = $_POST['email'];
+$address = $_POST['address'];
+$password = $_POST['password'];
+
+$login_id = "RAVI".rand(100000,999999);
+
+$password = password_hash($password,PASSWORD_DEFAULT);
+
+$sql="INSERT INTO users(full_name,mobile,email,address,login_id,password)
+VALUES('$name','$mobile','$email','$address','$login_id','$password')";
+
+if($conn->query($sql)){
+    echo "Registration Successful.<br>";
+    echo "Your Login ID : ".$login_id;
+}else{
+    echo "Error";
+}
+?><?php
+include "db.php";
+
+$login=$_POST['login_id'];
+$password=$_POST['password'];
+
+$sql=$conn->query("SELECT * FROM users WHERE login_id='$login'");
+
+if($sql->num_rows>0){
+
+$row=$sql->fetch_assoc();
+
+if(password_verify($password,$row['password'])){
+echo "Login Successful";
+}else{
+echo "Wrong Password";
+}
+
+}else{
+echo "Login ID Not Found";
+}
+?>function generatePassword($length = 8){
+    $chars = "ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz23456789@#$";
+    return substr(str_shuffle($chars),0,$length);
+}
+
+$password = generatePassword();
+$hash = password_hash($password, PASSWORD_DEFAULT);$login_id = "RAVI".date("Y").rand(1000,9999);
+
+// उदाहरण:
+// RAVI20268452$otp = rand(100000,999999);
+
+// Session में Save करें
+session_start();
+$_SESSION['otp'] = $otp;session_start();
+
+if($_POST['otp'] == $_SESSION['otp']){
+    echo "OTP Verified Successfully";
+}else{
+    echo "Invalid OTP";
+}<?php
+session_start();
+
+if(!isset($_SESSION['login_id'])){
+    header("Location: login.html");
+    exit();
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<style>
+body{
+font-family:Arial;
+background:#f5f5f5;
+margin:0;
+}
+.header{
+background:#0d6efd;
+color:white;
+padding:15px;
+}
+.card{
+background:white;
+margin:20px;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,.2);
+}
+.btn{
+background:red;
+color:white;
+padding:10px 20px;
+text-decoration:none;
+border-radius:5px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+<h2>Ravi Online Service Dashboard</h2>
+</div>
+
+<div class="card">
+<h3>Welcome</h3>
+
+<p>Login ID : <?php echo $_SESSION['login_id']; ?></p>
+
+<p>Status : Active</p>
+
+<a href="logout.php" class="btn">Logout</a>
+
+</div>
+
+</body>
+</html><?php
+session_start();
+session_destroy();
+
+header("Location: login.html");
+exit();
+?><?php
+include "db.php";
+
+$result = $conn->query("SELECT * FROM users");
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Panel</title>
+</head>
+
+<body>
+
+<h2>Registered Users</h2>
+
+<table border="1" cellpadding="10">
+
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Mobile</th>
+<th>Email</th>
+<th>Login ID</th>
+</tr>
+
+<?php
+while($row=$result->fetch_assoc()){
+?>
+
+<tr>
+
+<td><?= $row['id']; ?></td>
+
+<td><?= $row['full_name']; ?></td>
+
+<td><?= $row['mobile']; ?></td>
+
+<td><?= $row['email']; ?></td>
+
+<td><?= $row['login_id']; ?></td>
+
+</tr>
+
+<?php } ?>
+
+</table>
+
+</body>
+</html>
