@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register - Ravi Recharge Service</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+<div class="login-container">
+
+<div class="login-card">
+
+<img src="logo.png" class="logo">
+
+<h1>Create Account</h1>
+
+<p>Ravi Recharge Service</p>
+
+<div class="input-box">
+<i class="fa fa-user"></i>
+<input type="text" id="name" placeholder="Full Name">
+</div>
+
+<div class="input-box">
+<i class="fa fa-phone"></i>
+<input type="number" id="mobile" placeholder="Mobile Number">
+</div>
+
+<div class="input-box">
+<i class="fa fa-envelope"></i>
+<input type="email" id="email" placeholder="Email Address">
+</div>
+
+<div class="input-box">
+<i class="fa fa-map-marker-alt"></i>
+<input type="text" id="city" placeholder="City">
+</div>
+
+<button class="login-btn" onclick="register()">
+REGISTER NOW
+</button>
+
+<br><br>
+
+<a href="index.html" class="register-btn">
+BACK TO LOGIN
+</a>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+<script src="firebase.js"></script>
+</body>
+</html>
