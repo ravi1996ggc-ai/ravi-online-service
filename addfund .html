@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Fund</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+body{
+background:#f5f7ff;
+}
+
+.addfund-box{
+max-width:400px;
+margin:20px auto;
+background:#fff;
+padding:20px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.2);
+text-align:center;
+}
+
+.qr{
+width:220px;
+height:220px;
+margin:15px auto;
+border-radius:15px;
+border:5px solid #0072ff;
+}
+
+input{
+width:100%;
+padding:15px;
+margin:15px 0;
+border-radius:10px;
+border:1px solid #ccc;
+font-size:18px;
+}
+
+.btn{
+width:100%;
+padding:15px;
+margin-top:10px;
+border:none;
+border-radius:12px;
+font-size:18px;
+font-weight:bold;
+color:#fff;
+cursor:pointer;
+}
+
+.phonepe{
+background:#5f259f;
+}
+
+.gpay{
+background:#00a651;
+}
+
+.submit{
+background:#0072ff;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="addfund-box">
+
+<h2>Add Fund</h2>
+
+<img src="qr.png" class="qr">
+
+<h3>UPI ID</h3>
+
+<b>ravi1996.ggc2@ybl</b>
+
+<input type="number" id="amount" placeholder="Enter Amount">
+
+<button class="btn phonepe" onclick="phonepe()">
+PhonePe
+</button>
+
+<button class="btn gpay" onclick="gpay()">
+Google Pay
+</button>
+
+<button class="btn submit" onclick="paid()">
+I've Paid
+</button>
+
+</div>
+
+<script>
+
+function phonepe(){
+
+let amt=document.getElementById("amount").value;
+
+window.location.href="upi://pay?pa=ravi1996.ggc2@ybl&pn=Ravi Recharge Service&am="+amt+"&cu=INR";
+
+}
+
+function gpay(){
+
+let amt=document.getElementById("amount").value;
+
+window.location.href="upi://pay?pa=ravi1996.ggc2@ybl&pn=Ravi Recharge Service&am="+amt+"&cu=INR";
+
+}
+
+function paid(){
+
+alert("Payment Request Submitted.\nAdmin Verification Pending.");
+
+}
+
+</script>
+
+</body>
+</html>
