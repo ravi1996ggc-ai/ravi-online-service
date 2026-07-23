@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Login</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+body{
+background:linear-gradient(135deg,#0072ff,#00c6ff);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+font-family:Arial,sans-serif;
+}
+
+.admin-box{
+width:360px;
+background:#fff;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+text-align:center;
+}
+
+.admin-box h2{
+color:#0072ff;
+margin-bottom:20px;
+}
+
+.input{
+width:100%;
+padding:15px;
+margin:10px 0;
+border:1px solid #ddd;
+border-radius:10px;
+font-size:16px;
+}
+
+.btn{
+width:100%;
+padding:15px;
+background:#0072ff;
+color:#fff;
+border:none;
+border-radius:10px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+}
+</style>
+
+</head>
+<body>
+
+<div class="admin-box">
+
+<h2>Admin Panel</h2>
+
+<input type="text" id="adminId" class="input" placeholder="Admin ID">
+
+<input type="password" id="adminPass" class="input" placeholder="Password">
+
+<button class="btn" onclick="adminLogin()">Login</button>
+
+</div>
+
+<script>
+
+function adminLogin(){
+
+let id=document.getElementById("adminId").value;
+let pass=document.getElementById("adminPass").value;
+
+if(id==="admin" && pass==="12345"){
+
+window.location.href="admin-dashboard.html";
+
+}else{
+
+alert("Wrong Admin ID or Password");
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
